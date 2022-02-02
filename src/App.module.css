@@ -1,0 +1,18 @@
+.containcer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    align-items: center;
+    gap: 12px;
+}

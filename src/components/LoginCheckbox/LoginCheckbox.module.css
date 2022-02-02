@@ -1,0 +1,43 @@
+.label {
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    gap: 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    transition: background-color 0.2s;
+    padding: 6px;
+}
+
+.label::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 1px solid silver;
+    border-radius: 6px;
+}
+
+.label:hover {
+    background-color: whitesmoke;
+}
+
+.label:hover::before {
+    border: 1px solid darkgray;
+}
+
+.label:active::before {
+    border: 1px solid gray;
+}
+
+.check:checked + .label::before {
+    content: "✓";
+}
+
+.check {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
