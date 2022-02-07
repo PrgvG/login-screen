@@ -1,11 +1,11 @@
 import React from "react"
 import { Routes, Route } from "react-router-dom"
-import Home from "./screens/Home/Home"
-import Login from "./screens/Login/Login"
-import AuthProvider from "./auth/AuthProvider"
-import RequireAuth from "./auth/RequireAuth"
+import Home from "../screens/Home/Home"
+import Login from "../screens/Login/Login"
+import { AuthProvider } from "../auth/AuthProvider"
+import RequireAuth from "../auth/requireAuth"
 
-export const App = () => {
+const RoutesComponent = () => {
     return (
         <AuthProvider>
             <Routes>
@@ -15,3 +15,5 @@ export const App = () => {
         </AuthProvider>
     )
 }
+
+export default RoutesComponent

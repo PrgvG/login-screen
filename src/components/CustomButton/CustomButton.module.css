@@ -1,6 +1,7 @@
 .button {
     height: 48px;
     font-size: 18px;
+    padding: 0 18px;
     border: none;
     border-radius: 6px;
     background-color: silver;
